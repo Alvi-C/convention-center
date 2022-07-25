@@ -83,7 +83,22 @@
         </div>
     </section>
 
-    <!-- Body part 1  -->
+    <!-- Toaste  -->
+    <section class="position-relative">
+        <div class="toast position-absolute end-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div
+                class="toast-body d-flex justify-content-evenly align-items-center border-start border-5 border-primary">
+                <div>
+                    <i class="fa-solid fa-gift fs-2 text-primary"></i>
+                </div>
+                <div>
+                    <strong class="me-auto text-secondary">20% off on next booking</strong>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </section>
+    <!-- Every moment is precious section  -->
     <section>
         <div class="container my-5">
             <div class="row">
@@ -292,7 +307,7 @@
         </div>
     </section>
 
-
+    <!-- Frequently Asked Questions -->
     <section>
         <div class="container py-5">
             <div class="row text-center">
@@ -376,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12 p-3">
                         <img class="img-fluid" src="images/people.png" alt="">
                     </div>
                 </div>
@@ -408,6 +423,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
+    <script>
+        // js for toast
+        window.onload = (e) => {
+            let myToast = document.querySelector(".toast");
+            let bsToast = new bootstrap.Toast(myToast);
+            bsToast.show();
+        };
+    </script>
 </body>
 
 </html>

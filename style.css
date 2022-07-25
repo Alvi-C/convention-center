@@ -9,3 +9,8 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.toaste-icon {
+    width: 40px;
+    color: #007CFF;
+}
