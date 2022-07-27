@@ -14,3 +14,11 @@ body {
     width: 40px;
     color: #007CFF;
 }
+
+.footer-bg {
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+}
+
+.app-logo {
+    width: 150px;
+}
